@@ -1,0 +1,29 @@
+### Get All Users
+GET http://localhost:9090/users
+
+### Get User by ID
+GET http://localhost:9090/users/1
+
+### Get User not found
+GET http://localhost:9090/users/250
+
+### Add User
+POST http://localhost:9090/users
+Content-Type: application/json
+
+{
+    "id":10,
+    "name": "Peter Parker",
+    "email": "peter@gmail.com",
+    "number": "1234567890"
+}
+
+### Update User
+PATCH http://localhost:9090/users/2
+Content-Type: application/json
+
+{
+    "name": "Chathushka Ayash",
+    "email": "chathushka@gmail.com",
+    "number": "0712216841"
+}
